@@ -197,12 +197,4 @@ button {
   right: 40px;
   font-size: 35px;
   z-index: 1;
-  /* pointer-events: none; */
-  /* opacity: 0; */
-  transition: all 300ms ease-in;
-}
-
-.arrowbutton.pop {
-  opacity: 1;
-  pointer-events: auto;
 }
