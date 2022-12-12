@@ -51,8 +51,8 @@
     <!--End Navbar-->
 
     <!-- Start Home -->
-    <section id="home">
-      <div class="home__containter">
+    <section id="home" class="section">
+      <div class="containter">
         <h1 class="home__profile">IMHANNA's PORTFOLIO</h1>
         <img src="images/IHN.jpg" alt="이미지넣기" class="home__photo" />
         <h2 class="home__profile">꾸준한 성장을 위해 공부중인 프론트엔드 주니어 개발자 임한나입니다.</h2>
@@ -63,7 +63,7 @@
 
     <!-- Start about me -->
     <section id="about" class="section">
-      <div class="about__container">
+      <div class="container">
         <h1 class="title">About me</h1>
         <p class="aboutme__sim">최근에 ReactJS에 관심을 가져 공부중에 있습니다. 사용자가 편리하고 유용하게 사용할 수 있는 웹을 만드는 프론트엔드 개발자가 되기위해 항상 노력중인 임한나 입니다.</p>
       </div>
@@ -71,7 +71,7 @@
     <!-- End about -->
     <!-- Start skills -->
     <section id="skills" class="section">
-      <div class="skills__container">
+      <div class="container">
         <h1 class="title">Skills</h1>
         <div class="skillicons_container">
           <div class="icons html">
@@ -119,22 +119,53 @@
 
     <!-- Start work -->
     <section id="works" class="section">
-      <div class="works__container">
-        
+      <div class="container">
+        <h1 class="title">My Works</h1>
+        <h2>projects </h2>
+        <div class="work_categories">
+        <button class="categories_btn selected" data-category ="*">All</button>
+        <button class="categories_btn" data-category="HTML/CSS/JS">HTML/CSS/JS</button>
+        <button class="categories_btn" data-category="REACT">REACT</button>
       </div>
+      <div class="work_projects">
+        <a href="https://mattna0414.github.io/Han-Project2/#" class="projects" target="blank" data-project="HTML/CSS/JS">
+          <img src="./images/project01.png" class="project_image" alt="project01">
+          <div class="project_discription">
+            <h3>clone coding01</h3>
+            <span>카테고리 탭 반응형으로 만들기</span>
+          </div>
+        </a>
+
+        <a href="https://illustrious-bienenstitch-a560dc.netlify.app" class="projects" target="blank"  data-project="HTML/CSS/JS">
+          <img src="./images/project02.png" class="project_image" alt="project02">
+          <div class="project_discription">
+            <h3>Starbucks Clone Coding</h3>
+            <span>스타벅스 클론 코딩</span>
+          </div>
+        </a>
+
+        <a href="#" class="projects" target="blank" data-project="HTML/CSS/JS">
+          <img src="./images/project03.png" class="project_image" alt="project03">
+          <div class="project_discription">
+            <h3>My PortFolio</h3>
+            <span>임한나의 포트폴리오</span>
+          </div>
+        </a>
+      </div>
+    </div>
     </section><!-- End work -->
 
     <!-- Start about -->
     <section id="contact" class="section">
-      <div class="about__container">
+      <div class="container">
         <h1 class="contactme__title">Contact Me</h1>
         <p class="contact__email">dlaktk_@naver.com</p>
         <div class="contactme__link">
           <a href="https://github.com/mattna0414" target="blank">
             <i class="fa-brands fa-github"></i>
           </a>
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/gks.__.nnnaaa/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://m.facebook.com/dlaktsk?eav=AfYokhBVbp59H5fWC_68ErzLty8I_u0D8ls51VcYDws6TJ3wN5eNaoBH7seroeMHsLo&paipv=0"><i class="fa-brands fa-facebook"></i></a>
         </div>
         <span class="contact__rights">copyright(c)2022 All rights reserved by 임한나</span>
       </div>
