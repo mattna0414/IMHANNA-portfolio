@@ -34,21 +34,23 @@ navbarMenu.addEventListener("click", event=>{
   }
 }); //해당하는 카테고리 누르면 이동하기
 
-const contactMe = document.querySelector("#contact");
+
 contactBtn.addEventListener("click", event =>{
-  window.open("#contact")
+  event.preventDefault();
+  document.querySelector("#contact").scrollIntoView(true,{behavior: 'smooth'});
 });//js 다시 수정해서 부드럽게 넘어가는 방법 고민해보기
 
+//works
 workCategories.addEventListener("click", (event) =>{
   const Target = event.target;
   const Category =  
     Target.dataset.category || Target.parentNode.dataset.category;
 
   const selected = document.querySelector("categories_btn.selected");
-  const selectTarget = 
+  const selectTarget =
     event.target.nodeName === "BUTTON" ? event.target : event.target.parentNode;
-    selected.classList.remove("selected");
-    selectTarget.classList.add("selected");
+    selected.classList.add("selected");
+    selectTarget.classList.remove("")
 
     workProjects.classList.add("transition_none");
     setTimeout (() => {
@@ -62,7 +64,8 @@ workCategories.addEventListener("click", (event) =>{
       workProjects.classList.remove("transition_none");
     },200);
 });
-
+//버튼을 누르면 카테고리에 해당하는 목록들만 뜨게 만들기
+//지금은 안됨 수정해나가기
 
 
 topButton.addEventListener('click', function () {

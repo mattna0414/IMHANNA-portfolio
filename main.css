@@ -15,7 +15,6 @@ body {
 }
 
 
-
 h1 {
   font-size: 36px;
   font-weight: 700;
@@ -24,14 +23,14 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: normal;
   margin-bottom: 20px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 16px;
   margin: 10px 0px;
 }
 
@@ -229,27 +228,46 @@ button {
   color:#333;
 }
 
+.aboutme__sim {
+  text-align: left;
+  display: block;
+  line-height: 30px;
+}
+
+
+.aboutme__sim span{
+  font-weight: 900;
+  font-size: 24px;
+}
+
 /* skills */
 #skills {
   background-color:#f7f5f8;
-  color:#333;
+  color:#55056b;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.skills__container {
-
-}
 
 .skillicons_container {
   display: flex;
+  justify-content: center;
 }
 
 .icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 100px;
-  flex-direction:row;
+  margin: 40px;
+  flex-direction:column;
   flex-wrap: wrap;
+  flex-grow: 1;
+  width: 300px;
+  transition:all 0.3s ease-in-out;
+}
+
+.icons:hover {
+  transform: scale(1.2);
 }
 
 .carrer {
@@ -298,13 +316,15 @@ button {
 }
 
 .categories_btn:hover ,
-.categories_btn selected {
+.categories_btn.selected {
   background-color: #55056b;
   color: #f7f5f8;
 }
 
+
 .work_projects {
   display: flex;
+  padding-top:30px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -326,7 +346,6 @@ button {
 }
 
 .project_image {
-  /* padding: 20px 8px; */
   max-width: 100%;
   max-height: 100%;
 }
@@ -336,11 +355,10 @@ button {
 }
 
 .project_discription {
-  /* padding: 20px 8px; */
   position: absolute;
-  background-color: #f7f5f8;
+  background-color:#55056b;
   font-size: 12px;
-  color: #55056b;
+  color: #f7f5f8;
   width: 100%;
   height: 100%;
   top: 0;
@@ -367,7 +385,7 @@ button {
 
 .projects:hover .project_discription {
   opacity: .75%;
-  bottom: 0;
+  bottom: 0px;
   transition: all ease-in 200ms;
   transform: translateY(100px);
 }
@@ -442,6 +460,10 @@ button {
 
 @media (max-width: 768px) {
 
+  .container {
+    margin: 0 30px;
+  }
+
   #navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -450,7 +472,7 @@ button {
   }
 
   .navar__title__name {
-    font-size: 20px;
+    font-size: 18px;
     color:#55056b;
   }
   
@@ -480,11 +502,25 @@ button {
 
 
   .skillicons_container {
-    flex-direction: column;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
   }
 
+  .icons {
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+  }
 
   #to-top {
+    bottom: 3%;
+    right: 2%;
+  }
+
+  #to-top:hover {
     bottom: 3%;
     right: 2%;
   }
